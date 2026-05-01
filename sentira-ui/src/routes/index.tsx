@@ -23,7 +23,7 @@ export const Route = createFileRoute("/")({
 
 function AuthLanding() {
   const navigate = useNavigate();
-  const { theme, toggle } = useTheme(); // ✅ THEME
+  const { theme, toggle } = useTheme(); 
 
   const [mode, setMode] = useState<"login" | "register">("login");
   const [name, setName] = useState("");
@@ -85,7 +85,7 @@ function AuthLanding() {
     <div className="relative min-h-screen overflow-hidden">
       <AuroraBackground />
 
-      {/* ✅ THEME TOGGLE BUTTON */}
+      {/*  THEME TOGGLE BUTTON */}
       <div className="absolute top-6 right-6 z-50">
         <button
           onClick={toggle}

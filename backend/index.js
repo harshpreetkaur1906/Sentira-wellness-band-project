@@ -1,10 +1,13 @@
+require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
 require("dotenv").config();
-const User = require("./models/User");
+const User = require("./models/user");
+const Wellness = require("./models/wellness");
+const auth = require("./middleware/auth");
 
 const app = express();
 app.use(cors());
