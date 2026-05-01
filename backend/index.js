@@ -12,7 +12,7 @@ const auth = require("./middleware/auth");
 const app = express();
 app.use(cors());
 app.use(express.json());
-const Wellness = require("./models/wellness");
+
 const auth = require("./middleware/auth");
 // 🔗 MongoDB connection
 mongoose.connect("mongodb://localhost:27017/sentiraDB")
