@@ -11,7 +11,7 @@ const auth = require("./middleware/auth");
 
 const app = express();
 app.use(cors({
-  origin: "*",
+  origin: "https://your-site.netlify.app",
   credentials: true,
 }));
 app.use(express.json());
