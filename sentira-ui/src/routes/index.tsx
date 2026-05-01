@@ -52,7 +52,7 @@ function AuthLanding() {
 
     try {
       if (mode === "register") {
-        await axios.post("http://localhost:5000/api/register", {
+       await axios.post("https://sentira-project.onrender.com/api/register", {
           name,
           email,
           password,
@@ -64,7 +64,7 @@ function AuthLanding() {
         return;
       }
 
-      const res = await axios.post("http://localhost:5000/api/login", {
+     const res = await axios.post("https://sentira-project.onrender.com/api/login", {
         email,
         password,
       });

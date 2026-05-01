@@ -43,7 +43,7 @@ function Dashboard() {
   const fetchData = async () => {
     const token = localStorage.getItem("token");
 
-    const res = await axios.get("http://localhost:5000/api/wellness", {
+    const res = await axios.get("https://sentira-project.onrender.com/api/wellness", {
       headers: { Authorization: token },
     });
 
@@ -54,7 +54,7 @@ function Dashboard() {
   const addLog = async (form: any) => {
     const token = localStorage.getItem("token");
 
-    await axios.post("http://localhost:5000/api/wellness", form, {
+    await axios.post("https://sentira-project.onrender.com/api/wellness", form, {
       headers: { Authorization: token },
     });
 
